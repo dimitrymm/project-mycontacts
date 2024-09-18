@@ -24,8 +24,8 @@ export default styled.button`
     }
 
     ${({ theme, danger }) =>
-			danger &&
-			css`
+        danger &&
+        css`
             background: ${theme.colors.danger.main};
 
             &:hover {
