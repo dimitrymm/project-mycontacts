@@ -2,8 +2,11 @@ import PageHeader from '../../components/PageHeader';
 
 import ContactForm from '../../components/ContactForm';
 import ContactsService from '../../services/ContactsService';
+import toast from '../../utils/toast';
+import { useRef } from 'react';
 
 export default function NewContact() {
+    const contactFormRef = useRef(null);
     async function handleSubmit(formData) {
         try {
             const contact = {
@@ -13,17 +16,27 @@ export default function NewContact() {
                 category_id: formData.categoryId,
             };
 
-            const response = await ContactsService.createContacts(contact);
-
-            console.log(response);
+            await ContactsService.createContacts(contact);
+            contactFormRef.current.resetFields();
+            toast({
+                type: 'success',
+                text: 'Contato Cadastrado com sucesso!',
+            });
         } catch {
-            alert('Ocorreu um erro ao cadastrar um contato!');
+            toast({
+                type: 'danger',
+                text: 'Ocorreu um erro ao cadastrar um contato!',
+            });
         }
     }
     return (
         <>
             <PageHeader title="Novo Contato" />
-            <ContactForm onSubmit={handleSubmit} buttonLabel="Cadastrar" />
+            <ContactForm
+                ref={contactFormRef}
+                onSubmit={handleSubmit}
+                buttonLabel="Cadastrar"
+            />
         </>
     );
 }

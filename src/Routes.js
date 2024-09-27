@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import NewContact from './pages/NewContact';
 
 export default function Routes() {
-    const log = '';
     return (
         <Switch>
             <Route path="/" exact component={Home} />

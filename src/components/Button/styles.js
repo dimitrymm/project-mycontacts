@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export default styled.button`
+export const StyledButton = styled.button`
     height: 52px;
     border: none;
     padding: 0 16px;
@@ -11,6 +11,10 @@ export default styled.button`
     color: #fff;
     border-radius: 4px;
     transition: 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     &:hover {
         background: ${({ theme }) => theme.colors.primary.light};
     }
@@ -18,9 +22,9 @@ export default styled.button`
         background: ${({ theme }) => theme.colors.primary.dark};
     }
     &[disabled] {
-        background: #555;
-        color: #999;
-        cursor: default;
+        background: #999 !important;
+        color: #999 !important;
+        cursor: default !important;
     }
 
     ${({ theme, danger }) =>
