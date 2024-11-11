@@ -4,6 +4,7 @@ class HttpClient {
     constructor(baseURL) {
         this.baseURL = baseURL;
     }
+
     get(path, options) {
         return this.makeRequest(path, {
             method: 'GET',
@@ -33,6 +34,7 @@ class HttpClient {
     }
 
     async makeRequest(path, options) {
+        console.log('tipo do objeto', typeof options);
         await delay(500);
         const headers = new Headers();
         if (options.body) {
