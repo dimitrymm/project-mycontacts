@@ -34,7 +34,6 @@ class HttpClient {
     }
 
     async makeRequest(path, options) {
-        console.log('tipo do objeto', typeof options);
         await delay(500);
         const headers = new Headers();
         if (options.body) {
