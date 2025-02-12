@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# My Contacts - Gerenciador de Contatos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📝 Sobre
+O **My Contacts** é uma aplicação web para gerenciar seus contatos de forma prática e eficiente. Com ela, você pode:
 
-## Available Scripts
+- Adicionar novos contatos com informações como nome, telefone, email e endereço
+- Editar e excluir contatos existentes
+- Visualizar uma lista organizada dos seus contatos
+- Pesquisar e filtrar contatos para facilitar o acesso às informações
+- Aproveitar uma interface responsiva e intuitiva
 
-In the project directory, you can run:
+## 🚀 Tecnologias
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-### `yarn start`
+- [React](https://reactjs.org/)
+- [React Router DOM](https://v5.reactrouter.com/web/guides/quick-start)
+- [Styled Components](https://styled-components.com/)
+- [Prop Types](https://reactjs.org/docs/typechecking-with-proptypes.html)
+- [Create React App](https://create-react-app.dev/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💻 Pré-requisitos
+Antes de iniciar, certifique-se de ter instalado:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (versão 14 ou superior)
+- npm ou yarn
 
-### `yarn test`
+## 🗂️ Organização de Diretórios
+A estrutura de diretórios do projeto é a seguinte:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 📂 `public/`: Arquivos públicos, incluindo o `index.html`
+- 📂 `src/`: Código-fonte da aplicação
+  - 📂 `components/`: Componentes reutilizáveis (ex.: formulários, botões, layouts)
+  - 📂 `pages/`: Páginas da aplicação (ex.: Lista de Contatos, Detalhes do Contato)
+  - 📂 `styles/`: Estilos globais e temas da aplicação
+  - 📂 `services/`: Integração com APIs e funções auxiliares (se aplicável)
+- Outros arquivos de configuração, como `.gitignore`, `package.json`, entre outros
 
-### `yarn build`
+## 🎯 Funcionalidades
+- Cadastro de novos contatos com:
+  - Nome completo
+  - Telefone
+  - Email
+  - Endereço (opcional)
+- Edição e exclusão de contatos
+- Listagem e visualização detalhada dos contatos
+- Pesquisa e filtragem de contatos
+- Validação dos formulários para garantir a integridade dos dados
+- Interface responsiva para dispositivos móveis e desktop
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🤝 Contribuindo
+Contribuições são sempre bem-vindas! Para contribuir:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
+3. Realize os commits das suas alterações (`git commit -m 'Adiciona MinhaFeature'`)
+4. Envie para a branch (`git push origin feature/MinhaFeature`)
+5. Abra um Pull Request
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📝 Licença
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-### `yarn eject`
+## 👨‍💻 Autor
+Feito por **Dimitry Machado Marinho**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/dimitrymm)](https://www.linkedin.com/in/dimitrymm)
+[![GitHub](https://img.shields.io/badge/-GitHub-black?style=flat-square&logo=Github&logoColor=white&link=https://github.com/dimitrymm)](https://github.com/dimitrymm)
